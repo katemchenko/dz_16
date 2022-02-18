@@ -1,0 +1,216 @@
+@import "./components/variables.scss"; 
+@import "./components/mixin.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;500;700&display=swap');
+
+
+
+*{
+	box-sizing: border-box;
+}
+
+button{
+	border: none;
+}
+
+.d-block{
+	display: block;
+}
+
+body{
+	font-family: "Oswald", sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #999;
+}
+
+// Container
+.container{
+	max-width: 1100px;
+	padding: 0 10px;
+	margin: 0 auto;
+background-color: pink; 
+}
+
+// Header 
+.header{
+	max-width: 1920px;
+	min-height: 740px;
+	margin: 0 auto;
+	background: url("images/bg.jpg") center no-repeat; 
+	background-size: cover;
+}
+
+.header__line{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 5px;
+}
+.header__logo{
+	flex-basis: 60px;
+}
+
+.header__hamburger-menu{
+	width: 50px;
+	height: 50px;
+    background: url("images/hamburger-menu.jpg") no-repeat center;
+}
+
+.header__title{
+	@include fontStyle (500, 64px, 1.4, #fff);
+	text-transform: uppercase; 
+	letter-spacing: 0.02em;
+	text-align: center;
+	margin-top: 100px;
+}
+.header__sup-title{
+	@include fontStyle (400, 18px, 1.5, #fff);
+	text-transform: uppercase; 
+	display: block;
+	text-align: center;
+	margin-top: 35px;	
+}
+
+//Progress
+.progress__wrapper{
+	max-width: 1080px;
+	min-height: 300px;
+	background-color: $color-base;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	position: absolute;
+	top: 587px;
+	left: 0;
+	right: 0;
+		.progress__item{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.progress__item-title{
+			@include fontStyle (500, 72px, 1.4, $color-acsent);
+			padding-top: 65px;
+		}
+		.progress__item-suptitle{
+			@include fontStyle (500, 36px, 1.4, #000);
+			text-transform: uppercase; 
+		}
+		.progress__item-txt{
+			@include fontStyle (500, 18px, 1.4, #999);
+		}
+}
+
+//big-Projects
+.big-projects{
+	padding: 250px 0 80px 0;
+background-color: aquamarine;
+}
+
+.big-projects__title{
+	@include fontStyle (500, 36px, 1.5, #404149);
+	text-transform: uppercase; 
+	text-align: center;
+}
+
+.big-projects__wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 15px;
+	margin-top: 60px;
+	.item-img{
+		max-width: 350px;
+	}
+	.item-title{
+		@include fontStyle (500, 24px, 1.5, #404149);
+	}
+			.item-title::before {
+				content: "";
+				display: block;
+				width: 55px;
+				height: 6px;
+				background-color: $color-acsent;
+				margin: 45px 0 15px 0;
+			}
+	.item-txt{
+		font-family: "Open Sans", sans-serif;
+		@include fontStyle (400, 16px, 1.4, #999);
+		margin-top: 20px;
+	}
+}
+
+//clever-Projects
+.clever-projects{
+	width: 100%;
+	min-height: 180px;
+	background-color: $color-acsent;
+	padding-top: 35px;
+}
+
+.clever-projects__block{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.clever-projects__title{
+	@include fontStyle (700, 48px, 1.5, #fff);
+	text-transform: uppercase; 
+	display: block;
+}
+
+.clever-projects__suptitle{
+	@include fontStyle (700, 24px, 1.5, #fff);
+	text-transform: uppercase; 
+}
+
+.clever-projects__button{
+	min-width: 175px;
+	padding: 10px 15px 10px 40px;
+	@include fontStyle (500, 14px, 1.5, #000);
+	text-transform: uppercase; 
+	background-color: $button-color;
+	position: relative;
+	.ico{
+		width: 20px;
+		position: absolute;
+		top: 50%;
+		left: 30px;
+		transform: translateY(-50%);
+		}
+	}
+
+//Block
+.block{
+background-color: #2f709b;
+	padding: 150px 0 150px 0;
+}
+
+.block__title{
+	@include fontStyle (500, 36px, 1.5, #000);
+	text-transform: uppercase; 
+	text-align: center;
+	margin-bottom: 30px;
+}
+.block__wrapper{
+    margin: 0 -10px 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block__item{
+	margin: 30px 8px 0px 8px;
+    flex-basis: 350px;
+	background-color: $color-base;
+		.block__item-title{
+			@include fontStyle (500, 21px, 1.4, #000);
+			text-transform: uppercase; 
+			text-align: center;
+			display: block;
+			margin: 0 80px 60px 80px;
+		}
+
+		.block__item-img{
+			margin: 59px auto 30px auto;
+		}
+}

@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+}
+
+.d-block {
+  display: block;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #999;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 1920px;
+  min-height: 740px;
+  margin: 0 auto;
+  background: url("images/bg.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.header__line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5px;
+}
+
+.header__logo {
+  flex-basis: 60px;
+}
+
+.header__hamburger-menu {
+  width: 50px;
+  height: 50px;
+  background: url("images/hamburger-menu.jpg") no-repeat center;
+}
+
+.header__title {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 1.4;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.header__sup-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.progress__wrapper {
+  max-width: 1080px;
+  min-height: 300px;
+  background-color: #F7F7F7;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: absolute;
+  top: 587px;
+  left: 0;
+  right: 0;
+}
+.progress__wrapper .progress__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.progress__wrapper .progress__item-title {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 1.4;
+  color: #F7654A;
+  padding-top: 65px;
+}
+.progress__wrapper .progress__item-suptitle {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.4;
+  color: #000;
+  text-transform: uppercase;
+}
+.progress__wrapper .progress__item-txt {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #999;
+}
+
+.big-projects {
+  padding: 250px 0 80px 0;
+}
+
+.big-projects__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #404149;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.big-projects__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  margin-top: 60px;
+}
+.big-projects__wrapper .item-img {
+  max-width: 350px;
+}
+.big-projects__wrapper .item-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #404149;
+}
+.big-projects__wrapper .item-title::before {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 6px;
+  background-color: #F7654A;
+  margin: 45px 0 15px 0;
+}
+.big-projects__wrapper .item-txt {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #999;
+  margin-top: 20px;
+}
+
+.clever-projects {
+  width: 100%;
+  min-height: 180px;
+  background-color: #F7654A;
+  padding-top: 35px;
+}
+
+.clever-projects__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clever-projects__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+}
+
+.clever-projects__suptitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.clever-projects__button {
+  min-width: 175px;
+  padding: 10px 15px 10px 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #fff;
+  position: relative;
+}
+.clever-projects__button .ico {
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+
+.block {
+  padding: 150px 0 150px 0;
+}
+
+.block__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.block__wrapper {
+  margin: 0 -10px 0 -10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block__item {
+  margin: 30px 8px 0px 8px;
+  flex-basis: 350px;
+  background-color: #F7F7F7;
+}
+.block__item .block__item-title {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 1.4;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: 0 80px 60px 80px;
+}
+.block__item .block__item-img {
+  margin: 59px auto 30px auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
